@@ -10,7 +10,7 @@ public class Dispensadora {
     public Dispensadora(String marca, double capacidad) {
         this.marca = marca;
         this.capacidad = capacidad;
-        this.temperatura = -3;
+        this.temperatura = -1;
     }
 
     public boolean servir(double cantidadAServir) {
