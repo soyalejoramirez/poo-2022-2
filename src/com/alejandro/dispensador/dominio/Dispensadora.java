@@ -1,11 +1,11 @@
 package com.alejandro.dispensador.dominio;
 
 public class Dispensadora {
-    public String marca;
-    public double capacidad;
-    public double cantidadActual;
-    public double temperatura;
-    public Cerveza cervezaActual;
+    private String marca;
+    private double capacidad;
+    private double cantidadActual;
+    private double temperatura;
+    private Cerveza cervezaActual;
 
     public Dispensadora(String marca, double capacidad) {
         this.marca = marca;
@@ -22,11 +22,11 @@ public class Dispensadora {
         return false;
     }
 
-    public boolean cantidadAServirEsValida(double cantidadAServir) {
+    private boolean cantidadAServirEsValida(double cantidadAServir) {
         return cantidadAServir > 0 && cantidadAServir <= this.cantidadActual;
     }
 
-    public boolean temperaturaEsValida() {
+    private boolean temperaturaEsValida() {
         return this.temperatura >= -10 && this.temperatura <= 10;
     }
 
@@ -42,7 +42,7 @@ public class Dispensadora {
     public void cambiarCerveza(Cerveza nuevaCerveza) {
         this.vaciar();
         this.cervezaActual = nuevaCerveza;
-        this.temperatura = nuevaCerveza.tempRecomendada;
+        this.temperatura = nuevaCerveza.getTempRecomendada();
         this.llenar();
     }
 
@@ -52,5 +52,25 @@ public class Dispensadora {
 
     public void vaciar() {
         this.cantidadActual = 0;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public double getCapacidad() {
+        return capacidad;
+    }
+
+    public double getCantidadActual() {
+        return cantidadActual;
+    }
+
+    public double getTemperatura() {
+        return temperatura;
+    }
+
+    public Cerveza getCervezaActual() {
+        return cervezaActual;
     }
 }

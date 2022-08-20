@@ -1,13 +1,13 @@
 package com.alejandro.banco.dominio;
 
 public class CuentaBancaria {
-    public Persona propietario;
-    public String tipo;
-    public int numero;
-    public Banco banco;
-    public String clave;
-    public double saldo;
-    public boolean activa;
+    private Persona propietario;
+    private String tipo;
+    private int numero;
+    private Banco banco;
+    private String clave;
+    private double saldo;
+    private boolean activa;
 
     public CuentaBancaria(Persona propietario, String tipo, int numero) {
         this.propietario = propietario;
@@ -48,7 +48,7 @@ public class CuentaBancaria {
     }
 
     public String consultarSaldoActual() {
-        return propietario.nombre + " tu saldo actual es " + saldo;
+        return propietario.getNombre() + " tu saldo actual es " + saldo;
     }
 
     public boolean transferir(CuentaBancaria destino, double monto) {
@@ -67,6 +67,42 @@ public class CuentaBancaria {
         }
 
         return false;
+    }
+
+    public Persona getPropietario() {
+        return propietario;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public Banco getBanco() {
+        return banco;
+    }
+
+    public String getClave() {
+        return clave;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public boolean isActiva() {
+        return activa;
+    }
+
+    public void setClave(String clave) {
+        this.clave = clave;
+    }
+
+    public void setActiva(boolean activa) {
+        this.activa = activa;
     }
 }
 
