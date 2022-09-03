@@ -13,3 +13,11 @@ f
 6src/com/alejandro/dispensador/app/AppDispensadora.java,5\4\545fb8fb7ae1b90089e5fd4468e86e679f39c635
 g
 7src/com/alejandro/dispensador/dominio/Dispensadora.java,7\e\7ea304fcfbc34a2a9d3e2b45dd024598d3d0e672
+w
+G.idea/sonarlint/issuestore/f/d/fdb29e0f45b88489c1b60066634815a1b750bb8a,4\2\427e11ed424b44e07792f91954591517653eb635
+w
+G.idea/sonarlint/issuestore/a/2/a26b59d5e1b556251fbf5226619affd43b7efbdd,0\d\0de5319fffe08efac446187f8057e152e0e1448a
+w
+G.idea/sonarlint/issuestore/7/e/7ea304fcfbc34a2a9d3e2b45dd024598d3d0e672,2\0\20b6f0426904acb594385819472e5a66eee23c87
+w
+G.idea/sonarlint/issuestore/1/8/183de63146a87f96ba3673f95c5c51e9a0ae2ead,b\e\be1d817ab3afb9ea4145fb02bda07c83f34f5aea
