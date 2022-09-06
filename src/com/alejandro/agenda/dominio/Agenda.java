@@ -1,7 +1,9 @@
 package com.alejandro.agenda.dominio;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Agenda {
     private List<Contacto> contactos;
@@ -12,7 +14,7 @@ public class Agenda {
     }
 
     public boolean crearContacto(String nombre, String apellido, long telefono) {
-        if (this.buscarPorNumero(telefono) == null && this.contactos.size() < LIMITE_AGENDA) {
+        if (this.buscar(telefono) == null && this.contactos.size() < LIMITE_AGENDA) {
             Contacto contactoAAgregar = new Contacto(nombre, apellido, telefono);
             this.contactos.add(contactoAAgregar);
 //            this.contactos.add(new Contacto(nombre, apellido, telefono));
@@ -22,7 +24,7 @@ public class Agenda {
     }
 
     public void eliminarContacto(long telefono) {
-        Contacto contactoAEliminar = this.buscarPorNumero(telefono);
+        Contacto contactoAEliminar = this.buscar(telefono);
 
         if (contactoAEliminar != null) {
             this.contactos.remove(contactoAEliminar);
@@ -31,15 +33,19 @@ public class Agenda {
 //        this.contactos.removeIf(contacto -> contacto.getNumero() == telefono);
     }
 
-    public List<Contacto> buscarPorNombre(String nombreABuscar) {
-        return null;
+    public List<Contacto> buscar(String nombreABuscar) {
+        return this.contactos.stream()
+                .filter(c -> c.getNombre().toLowerCase().startsWith(nombreABuscar.toLowerCase()))
+                .collect(Collectors.toList());
     }
 
     public List<Contacto> buscarPorApellido(String apellidoABuscar) {
-        return null;
+        return this.contactos.stream()
+                .filter(c -> c.getApellido().equalsIgnoreCase(apellidoABuscar))
+                .collect(Collectors.toList());
     }
 
-    public Contacto buscarPorNumero(long numeroABuscar) {
+    public Contacto buscar(long numeroABuscar) {
         Contacto contactoBuscado = null;
 
         for (Contacto contacto : this.contactos) {
@@ -57,10 +63,17 @@ public class Agenda {
     }
 
     public boolean cambiarNumero(long numeroViejo, long numeroNuevo) {
-        return true;
+        Contacto contactoAModificar = this.buscar(numeroViejo);
+
+        if (contactoAModificar != null) {
+            contactoAModificar.setNumero(numeroNuevo);
+            return true;
+        } else {
+            return false;
+        }
     }
 
-    public List<Contacto> ordenar() {
-        return null;
+    public void ordenar() {
+        this.contactos.sort(Comparator.comparing(Contacto::getNombre).thenComparing(Contacto::getApellido));
     }
 }

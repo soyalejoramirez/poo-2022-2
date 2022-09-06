@@ -1,27 +1,25 @@
 package com.alejandro.agenda.app;
 
+import com.alejandro.agenda.dominio.Agenda;
+import com.alejandro.agenda.dominio.Contacto;
+
+import java.util.List;
+
 public class AppAgenda {
-    public static void main(String[] args) throws InterruptedException {
-        recursivo();
-    }
+    public static void main(String[] args) {
+        Agenda agenda = new Agenda();
 
-    public static void recursivo() throws InterruptedException {
-        long iteraciones = 20;
-        for (long i = 1; i < 20; i++) {
-            System.out.println("Ciclo #" + i + ". Memoria libre: " + Runtime.getRuntime().freeMemory());
+        agenda.crearContacto("Pedro", "Zuluaga", 3002547895l);
+        agenda.crearContacto("Pedro", "Perez", 3052547895l);
+        agenda.crearContacto("Pepe", "Ramirez", 3102547895l);
+        agenda.crearContacto("Alejandro", "Ramirez", 3108847895l);
+        agenda.crearContacto("Pilar", "Gutierrez", 3002547895l);
+        agenda.crearContacto("Zoraida", "Dell", 3102547800l);
 
-            int ciclo = 2;
-            long[] arrayPesado = new long[(int) iteraciones];
+        agenda.ordenar();
 
-            do {
-                arrayPesado[ciclo] = 0;
-                ciclo--;
-            } while (ciclo > 0);
+        List<Contacto> contactosFiltrados = agenda.buscarPorApellido("ramirez");
 
-            iteraciones = iteraciones * 50;
-            System.out.println("\nMemoria requerida para el siguiente ciclo: " + iteraciones);
-            Thread.sleep(2500);
-        }
-
+        contactosFiltrados.forEach(c -> System.out.println(c.getNombre() + " " + c.getApellido()));
     }
 }
