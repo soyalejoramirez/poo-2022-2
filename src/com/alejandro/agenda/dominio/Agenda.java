@@ -17,14 +17,15 @@ public class Agenda {
         if (this.buscar(telefono) == null && this.contactos.size() < LIMITE_AGENDA) {
             Contacto contactoAAgregar = new Contacto(nombre, apellido, telefono);
             this.contactos.add(contactoAAgregar);
+            return true;
 //            this.contactos.add(new Contacto(nombre, apellido, telefono));
         }
-
+        System.out.println("No se pudo crear el contacto " + nombre);
         return false;
     }
 
     public void eliminarContacto(long telefono) {
-        Contacto contactoAEliminar = this.buscar(telefono);
+        Contacto contactoAEliminar = buscar(telefono);
 
         if (contactoAEliminar != null) {
             this.contactos.remove(contactoAEliminar);
@@ -75,5 +76,9 @@ public class Agenda {
 
     public void ordenar() {
         this.contactos.sort(Comparator.comparing(Contacto::getNombre).thenComparing(Contacto::getApellido));
+    }
+
+    public List<Contacto> getContactos() {
+        return contactos;
     }
 }

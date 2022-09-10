@@ -1,12 +1,0 @@
-
-=
-java:S1125"'Remove the unnecessary boolean literal.(¶ÎìÕ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(Ó”Í¾şÿÿÿÿ
-M	java:S106"9Replace this use of System.out or System.err by a logger.(öÂæW
-B
-java:S1125$"'Remove the unnecessary boolean literal.(…Ó­ûÿÿÿÿ
-S	java:S106)"9Replace this use of System.out or System.err by a logger.(‹õâ‘şÿÿÿÿ
-S	java:S106-"9Replace this use of System.out or System.err by a logger.(ŸşÌ¸ıÿÿÿÿ
-=
-java:S11259"'Remove the unnecessary boolean literal.(è¼—„
-N	java:S106@"9Replace this use of System.out or System.err by a logger.(æŒªØ

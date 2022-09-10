@@ -1,6 +1,7 @@
 package com.alejandro.agenda.dominio;
 
 public class Contacto {
+    private static int contador;
     private String nombre;
     private String apellido;
     private long numero;
@@ -9,6 +10,8 @@ public class Contacto {
         this.nombre = nombre;
         this.apellido = apellido;
         this.numero = numero;
+
+        contador++;
     }
 
     public String getNombre() {
@@ -33,5 +36,9 @@ public class Contacto {
 
     public void setNumero(long numero) {
         this.numero = numero;
+    }
+
+    public static int getContador() {
+        return contador;
     }
 }

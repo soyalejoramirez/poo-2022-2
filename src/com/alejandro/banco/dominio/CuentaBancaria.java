@@ -18,7 +18,7 @@ public class CuentaBancaria {
     }
 
     public boolean consignar(double montoAConsignar) {
-        if (this.activa == true) {
+        if (this.activa) {
             if (montoAConsignar > 0) {
                 this.saldo += montoAConsignar;
                 return true;

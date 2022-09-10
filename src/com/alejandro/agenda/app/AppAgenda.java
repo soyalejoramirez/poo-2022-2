@@ -13,8 +13,16 @@ public class AppAgenda {
         agenda.crearContacto("Pedro", "Perez", 3052547895l);
         agenda.crearContacto("Pepe", "Ramirez", 3102547895l);
         agenda.crearContacto("Alejandro", "Ramirez", 3108847895l);
-        agenda.crearContacto("Pilar", "Gutierrez", 3002547895l);
+        agenda.crearContacto("Pilar", "Gutierrez", 3002540095l);
         agenda.crearContacto("Zoraida", "Dell", 3102547800l);
+        System.out.println("Contactos creados: " + Contacto.getContador());
+        System.out.println("Tamaño lista: " + agenda.getContactos().size());
+
+        agenda.eliminarContacto(3002540095l);
+        agenda.crearContacto("Roberto", "Toto", 3147589416l);
+
+        System.out.println("Contactos creados despues: " + Contacto.getContador());
+        System.out.println("Tamaño lista despues: " + agenda.getContactos().size());
 
         agenda.ordenar();
 
