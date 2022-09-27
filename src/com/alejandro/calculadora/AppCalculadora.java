@@ -8,7 +8,21 @@ public class AppCalculadora {
     private static final ImageIcon ICONO = new ImageIcon(AppCalculadora.class.getResource("uco.png"));
 
     public static void main(String[] args) {
-        //String nombre = JOptionPane.showInputDialog("¿Quién llegó tarde?");
+        boolean casteoOk;
+        do {
+            casteoOk = false;
+            try {
+                double edad = Double.parseDouble(JOptionPane.showInputDialog("¿Cuanto pesa en kg?"));
+                casteoOk = true;
+                String pesoEnTexto = String.valueOf(edad);
+                mostrarMensaje("El peso es " + edad);
+            } catch (NumberFormatException error) {
+                error.printStackTrace();
+                mostrarMensaje("Peso inválido");
+            }
+        } while (casteoOk == false);
+
+
 //        String nombre = (String) JOptionPane.showInputDialog(null, "¿Quién llegó tarde?",
 //                POO, JOptionPane.INFORMATION_MESSAGE, ICONO, Arrays.asList("Juan", "Ricardo", "Riky", "Sergio").toArray(),
 //                "Ricardo");
