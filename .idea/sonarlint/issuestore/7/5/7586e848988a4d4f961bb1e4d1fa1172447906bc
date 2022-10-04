@@ -1,0 +1,10 @@
+
+Z
+java:S1854"?Remove this useless assignment to local variable "pesoEnTexto".(ü¼×Ğÿÿÿÿÿ
+K
+java:S1481"0Remove this unused "pesoEnTexto" local variable.(ü¼×Ğÿÿÿÿÿ
+B
+java:S1125"'Remove the unnecessary boolean literal.(Ñßøøÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(€òØòıÿÿÿÿ
+H
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ

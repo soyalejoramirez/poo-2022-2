@@ -1,8 +1,18 @@
 package com.alejandro.transporte.dominio;
 
 public class Carro extends Vehiculo {
-    private String placa;
-    private String tipoCaja;
+    protected String placa;
+    protected String tipoCaja;
+
+    public Carro(long serial, String marca, String placa) {
+        super(serial, marca);
+        this.placa = placa;
+    }
+
+    @Override
+    public void acelerar() {
+        System.out.println("El carro va acelerando");
+    }
 
     public String getPlaca() {
         return placa;

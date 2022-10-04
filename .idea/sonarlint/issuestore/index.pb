@@ -19,3 +19,7 @@ f
 .src/com/alejandro/agenda/dominio/Contacto.java,2\8\28526bdcf7f66de36dd91d919367cdb0be74c7f9
 c
 3src/com/alejandro/banco/dominio/CuentaBancaria.java,1\a\1a5a473c1bd12c8aa8d08877248d7cdb0a82a334
+^
+.src/com/alejandro/calculadora/Calculadora.java,2\c\2cdd4903951de039d64766ecf9c3d0fd1cdef172
+a
+1src/com/alejandro/calculadora/AppCalculadora.java,7\5\7586e848988a4d4f961bb1e4d1fa1172447906bc
