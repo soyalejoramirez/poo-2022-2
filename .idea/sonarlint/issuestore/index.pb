@@ -1,6 +1,4 @@
 
-\
-,src/com/alejandro/banco/dominio/Persona.java,a\2\a26b59d5e1b556251fbf5226619affd43b7efbdd
 Z
 *src/com/alejandro/banco/dominio/Banco.java,1\8\183de63146a87f96ba3673f95c5c51e9a0ae2ead
 g
