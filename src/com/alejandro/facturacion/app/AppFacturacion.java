@@ -1,7 +1,6 @@
 package com.alejandro.facturacion.app;
 
 import com.alejandro.banco.dominio.Persona;
-import com.alejandro.facturacion.dominio.Factura;
 import com.alejandro.facturacion.dominio.Facturacion;
 
 public class AppFacturacion {
@@ -16,6 +15,5 @@ public class AppFacturacion {
 
         System.out.println(sistemaFac.obtenerTotalFacturas());
         System.out.println(sistemaFac.obtenerInfoFacturas());
-
     }
 }
