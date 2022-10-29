@@ -47,3 +47,15 @@ l
 <src/com/alejandro/geometria/dominio/TrianguloEquilatero.java,1\0\10e12912d4630c40bdf68800df003c4afefba98d
 a
 1src/com/alejandro/geometria/dominio/Cuadrado.java,c\f\cf05e729d8f25fb63053ca2bcef04654916eba34
+w
+G.idea/sonarlint/issuestore/3/0/30830dce43b602e0e53f02eed038e0ac0afa9a31,9\2\928de42b2f49261b16107926d1f9e24b2e39c67c
+w
+G.idea/sonarlint/issuestore/1/0/10e12912d4630c40bdf68800df003c4afefba98d,1\8\18e6b5a1ae7be99c7d41a051372f028bf6710a13
+w
+G.idea/sonarlint/issuestore/0/e/0e7852b27c2d99b12580e72630831e64af0799a4,4\0\4044f692ab0cfccf5553e5258b97144dae8a21fd
+w
+G.idea/sonarlint/issuestore/c/f/cf05e729d8f25fb63053ca2bcef04654916eba34,0\d\0d33ccc8259fd33e4bdc3ec42e3573c123a4ddae
+w
+G.idea/sonarlint/issuestore/a/7/a791cbcbd9f483284b716556ffd03efea6d557e5,0\9\09e08c1dc2234ada4025d430624832d3782cbf55
+w
+G.idea/sonarlint/issuestore/6/f/6f199cd4f0a70dcb0d4494952dda6c7b6baf152d,b\f\bf699f46e8b81cf3b6ca155aeeb854ce7e5077cc
