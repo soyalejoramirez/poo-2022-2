@@ -59,3 +59,15 @@ w
 G.idea/sonarlint/issuestore/a/7/a791cbcbd9f483284b716556ffd03efea6d557e5,0\9\09e08c1dc2234ada4025d430624832d3782cbf55
 w
 G.idea/sonarlint/issuestore/6/f/6f199cd4f0a70dcb0d4494952dda6c7b6baf152d,b\f\bf699f46e8b81cf3b6ca155aeeb854ce7e5077cc
+b
+2src/com/alejandro/facturacion/dominio/Factura.java,a\5\a5d766bffb44db2a4d408eb8069661f7c2488a80
+e
+5src/com/alejandro/facturacion/app/AppFacturacion.java,0\7\073566405f5acc1db2150a231f164c995b934614
+\
+,src/com/alejandro/banco/dominio/Persona.java,a\2\a26b59d5e1b556251fbf5226619affd43b7efbdd
+h
+8src/com/alejandro/facturacion/dominio/FacturaSinIva.java,6\2\62760158c1d88d21c07e4c05545ea133b71249ce
+h
+8src/com/alejandro/facturacion/dominio/FacturaConIva.java,2\b\2b702e0aa144e3e343c05cf275a6cfb84cfd30ab
+f
+6src/com/alejandro/facturacion/dominio/Facturacion.java,e\6\e604fc41ce4d74d136b48fb348c0994b3153d398
