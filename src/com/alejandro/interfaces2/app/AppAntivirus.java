@@ -12,7 +12,7 @@ public class AppAntivirus {
         antivirus.agregar(new DocumentoWord("tesis.docx", true));
         antivirus.agregar(new DocumentoWord("hoja de vida.docx", false));
         antivirus.agregar(new DocumentoWord("despido.docx", true));
-        //antivirus.agregar(new DocumentoPDF("despido.pdf", 10));
+        antivirus.agregar(new DocumentoPDF("despido.pdf", 10));
         antivirus.agregar(new Video("esperanza.mp4", 140));
 
         antivirus.escanear();

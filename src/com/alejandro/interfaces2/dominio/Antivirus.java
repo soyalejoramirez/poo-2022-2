@@ -5,24 +5,28 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Antivirus {
-    private List<Viruseable> elementosAExaminar;
+    private List<Archivo> archivosAExaminar;
 
     public Antivirus() {
-        this.elementosAExaminar = new ArrayList<>();
+        this.archivosAExaminar = new ArrayList<>();
     }
 
-    public void agregar(Viruseable elemento) {
-        this.elementosAExaminar.add(elemento);
+    public void agregar(Archivo arch) {
+        this.archivosAExaminar.add(arch);
     }
 
     public void escanear() {
         System.out.println("Iniciando la busqueda de virus");
         AtomicInteger virusEncontrados = new AtomicInteger();
 
-        this.elementosAExaminar.forEach(elem -> {
-            if (elem.tieneVirus()) {
-                virusEncontrados.getAndIncrement();
-                System.out.println("'" + elem.nombre() + "' tiene virus ☠");
+        this.archivosAExaminar.forEach(archivo -> {
+            if (archivo instanceof Viruseable) {
+                if (((Viruseable) archivo).tieneVirus()) {
+                    virusEncontrados.getAndIncrement();
+                    System.out.println("'" + archivo.getNombre() + "' tiene virus ☠");
+                }
+            } else {
+                System.out.println("No se pudo escanear '" + archivo.getNombre() + "'");
             }
         });
 

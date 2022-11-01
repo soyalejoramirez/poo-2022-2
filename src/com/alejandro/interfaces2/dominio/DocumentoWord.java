@@ -12,9 +12,4 @@ public class DocumentoWord extends Documento implements Viruseable {
     public boolean tieneVirus() {
         return this.protegido == false;
     }
-
-    @Override
-    public String nombre() {
-        return this.getNombre();
-    }
 }
