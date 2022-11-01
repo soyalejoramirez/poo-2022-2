@@ -1,6 +1,6 @@
 package com.alejandro.interfaces2.dominio;
 
-public class DocumentoWord extends Documento {
+public class DocumentoWord extends Documento implements Viruseable {
     private boolean protegido;
 
     public DocumentoWord(String nombre, boolean protegido) {
@@ -11,5 +11,10 @@ public class DocumentoWord extends Documento {
     @Override
     public boolean tieneVirus() {
         return this.protegido == false;
+    }
+
+    @Override
+    public String nombre() {
+        return this.getNombre();
     }
 }

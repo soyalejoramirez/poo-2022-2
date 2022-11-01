@@ -7,5 +7,7 @@ public abstract class Documento {
         this.nombre = nombre;
     }
 
-    public abstract boolean tieneVirus();
+    public String getNombre() {
+        return nombre;
+    }
 }
